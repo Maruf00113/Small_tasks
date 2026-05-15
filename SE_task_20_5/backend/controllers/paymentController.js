@@ -4,10 +4,6 @@ const Payment = require("../models/PaymentModel");
 
 
 
-// =====================================
-// BANK PAYMENT
-// =====================================
-
 const bankPayment = async (req, res) => {
 
     try {
@@ -54,10 +50,6 @@ const bankPayment = async (req, res) => {
 
 
 
-
-// =====================================
-// ONLINE PAYMENT
-// =====================================
 
 const onlinePayment = async (req, res) => {
 
@@ -174,11 +166,6 @@ const onlinePayment = async (req, res) => {
 
 
 
-
-// =====================================
-// PAYMENT SUCCESS
-// =====================================
-
 const paymentSuccess = async (req, res) => {
 
     try {
@@ -216,10 +203,6 @@ const paymentSuccess = async (req, res) => {
 
 
 
-// =====================================
-// PAYMENT FAIL
-// =====================================
-
 const paymentFail = async (req, res) => {
 
     res.send("Payment Failed");
@@ -228,9 +211,6 @@ const paymentFail = async (req, res) => {
 
 
 
-// =====================================
-// PAYMENT CANCEL
-// =====================================
 
 const paymentCancel = async (req, res) => {
 
