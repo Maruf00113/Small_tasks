@@ -178,6 +178,7 @@ const paymentSuccess = async (req, res) => {
 
         const transactionId =
             data.mer_txnid || data.tran_id;
+        console.log("Transaction ID:", transactionId);
 
         await Payment.findOneAndUpdate(
 
